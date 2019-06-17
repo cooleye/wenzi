@@ -1,0 +1,21 @@
+<view class='container'>
+<view class='header'>
+您书写的文字是：
+<view class='result'>
+  {{word}}
+</view>
+
+<canvas  
+  canvas-id='wordCanvas'  
+  bindtouchstart='touchstart'
+  bindtouchmove='touchmove'
+  bindtouchend='touchend' 
+  class='gameCanvas'></canvas>
+
+  </view>
+  <view class='control'>
+    <view bindtap='recWord'>识别</view>
+    <view  bindtap='clearCanvas'>清空画布</view>
+  </view>
+
+</view>
